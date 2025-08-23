@@ -1,0 +1,21 @@
+package factory_method.tiles;
+
+import factory_method.Tile;
+
+public class SwampTile implements Tile{
+    @Override
+    public char getCharacter() {
+        return 'S';
+    }
+
+    @Override
+    public String getType() {
+        return "Swamp";
+    }
+
+    @Override
+    public void action(){
+        // action
+    };
+
+}
