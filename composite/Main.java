@@ -20,6 +20,7 @@ public class Main {
         organization.addDepartment(sales);
         organization.addDepartment(engineering);
 
+        System.out.println(organization.toXML());
         organization.showTotalSalary();
     }
 }

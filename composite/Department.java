@@ -24,6 +24,19 @@ public class Department implements OrganizationComponent {
         return totalSalary;
     }
 
+    public String toXML(String indent) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(indent).append(String.format("<Department name=\"%s\">\n", name));
+        for (Employee employee : employees) {
+            sb.append(employee.toXML(indent + "  "));
+        }
+        for (Department department : departments) {
+            sb.append(department.toXML(indent + "  "));
+        }
+        sb.append(indent).append("</Department>\n");
+        return sb.toString();
+    }
+
     public void addEmployee(Employee employee) {
         employees.add(employee);
     }

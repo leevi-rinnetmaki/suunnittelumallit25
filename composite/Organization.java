@@ -29,4 +29,14 @@ public class Organization {
         }
         System.out.println("Total Salary: " + totalSalary);
     }
+
+    public String toXML() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<Organization>\n");
+        for (Department department : departments) {
+            sb.append(department.toXML("  "));
+        }
+        sb.append("</Organization>\n");
+        return sb.toString();
+    }
 }

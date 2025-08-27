@@ -1,5 +1,11 @@
 package abstract_factory;
 
 public abstract class TextField {
-    abstract void display(String text);
+    String text;
+
+    abstract void display();
+
+    void setText(String text){
+        this.text = text;
+    }
 }

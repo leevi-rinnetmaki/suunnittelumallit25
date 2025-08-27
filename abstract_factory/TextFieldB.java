@@ -2,7 +2,7 @@ package abstract_factory;
 
 public class TextFieldB extends TextField {
     @Override
-    void display(String text) {
+    void display() {
         System.out.println(text+":\n------------------------\n|                      |\n|                      |\n------------------------\n");
     }
 }

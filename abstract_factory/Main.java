@@ -14,14 +14,23 @@ public class Main {
         Checkbox checkboxA = AFactory.createCheckbox();
         Checkbox checkboxB = BFactory.createCheckbox();
 
-        buttonA.display("Hello, motitotrsad");
-        buttonB.display("Hello, motitotrsad");
+        buttonA.setText("Eka button");
+        buttonB.setText("Toka button");
 
-        textFieldA.display("Hello, motitotrsad");
-        textFieldB.display("Hello, motitotrsad");
+        buttonA.display();
+        buttonB.display();
 
-        checkboxA.display("Hello, motitotrsad");
-        checkboxB.display("Hello, motitotrsad");
+        textFieldA.setText("Eka text field");
+        textFieldB.setText("Toka text field");
+
+        textFieldA.display();
+        textFieldB.display();
+
+        checkboxA.setText("Eka checkbox");
+        checkboxB.setText("Toka checkbox");
+
+        checkboxA.display();
+        checkboxB.display();
 
     }
 }
