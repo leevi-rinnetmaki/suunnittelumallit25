@@ -23,10 +23,12 @@ public class WeatherStation implements WeatherStationInterface, Runnable {
         observers.add(observer);    
     }
 
+    @Override
     public void removeObserver(WeatherObserver observer){
         observers.remove(observer);
     }
 
+    @Override
     public void notifyObservers(int temperature){
         for (WeatherObserver observer : observers){
             observer.update(temperature);
