@@ -1,10 +1,6 @@
 package observer;
 
-import java.util.ArrayList;
-
 public interface WeatherStationInterface {
-
-    ArrayList<WeatherObserver> observers = new ArrayList<>();
 
     public void addObserver(WeatherObserver observer);
 
