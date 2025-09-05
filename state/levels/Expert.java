@@ -8,6 +8,7 @@ public class Expert extends State {
         super(player, 50);
     }
 
+    @Override
     public void train() {
         player.xp+=10;
         if (player.xp >= xpToLevelUp){
@@ -25,6 +26,7 @@ public class Expert extends State {
         System.out.println("Expert meditates to recover health. Health is now: " + player.health + "\n");
     }
 
+    @Override
     public void fight() {
         player.health-=15;
         if (player.health <= 0) {

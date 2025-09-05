@@ -26,6 +26,7 @@ public class Intermediate extends State {
         System.out.println("Intermediate meditates to recover health. Health is now: " + player.health + "\n");
     }
 
+    @Override
     public void fight() {
         System.out.println("You are not skilled enough to fight properly.");
     }
